@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[var(--background)]">
       <main className="relative z-10 mx-auto flex min-h-screen max-w-2xl flex-col items-center justify-center px-6 py-12 text-center">
-        <div className="scale-[1.06] origin-center">
+        <div className="scale-[1.12] origin-center">
           <div className="mb-8 overflow-hidden rounded-full border-2 border-zinc-600 bg-zinc-800">
             <Image
               src="/kean.png"
