@@ -48,22 +48,23 @@ function EmailLink({ email }: { email: (typeof EMAILS)[number] }) {
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[var(--background)]">
-      <main className="relative z-10 mx-auto flex min-h-screen max-w-2xl flex-col items-center justify-center px-6 py-16 text-center">
-        <div className="mb-8 overflow-hidden rounded-full border-2 border-zinc-600 bg-zinc-800">
-          <Image
-            src="/kean.png"
-            alt="Kean Harrison"
-            width={512}
-            height={512}
-            quality={100}
-            unoptimized
-            className="photo-sharp h-40 w-40 object-cover sm:h-44 sm:w-44"
-            priority
-          />
-        </div>
+      <main className="relative z-10 mx-auto flex min-h-screen max-w-2xl flex-col items-center justify-center px-6 py-12 text-center">
+        <div className="scale-[1.06] origin-center">
+          <div className="mb-8 overflow-hidden rounded-full border-2 border-zinc-600 bg-zinc-800">
+            <Image
+              src="/kean.png"
+              alt="Kean Harrison"
+              width={512}
+              height={512}
+              quality={100}
+              unoptimized
+              className="photo-sharp h-40 w-40 object-cover sm:h-44 sm:w-44"
+              priority
+            />
+          </div>
 
-        <motion.h1
-          className="name-heading name-fine-grain mb-3 flex justify-center gap-0.5 whitespace-nowrap text-5xl font-bold tracking-tight text-white sm:text-6xl"
+          <motion.h1
+            className="name-heading name-fine-grain mb-3 flex justify-center gap-0.5 whitespace-nowrap text-5xl font-bold tracking-tight text-white sm:text-6xl"
           initial="initial"
           animate="animate"
           variants={{
@@ -158,6 +159,7 @@ export default function Home() {
               <EmailLink key={email} email={email} />
             ))}
           </div>
+        </div>
         </div>
       </main>
     </div>
