@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function LearnMorePage() {
+export default function ThoughtsPage() {
   return (
     <div className="min-h-screen bg-[var(--background)]">
       <main className="mx-auto max-w-2xl px-6 py-16">
@@ -10,10 +10,9 @@ export default function LearnMorePage() {
         >
           ← Back
         </Link>
-        <h1 className="mt-8 text-2xl font-bold text-white">Learn more</h1>
-        <p className="mt-4 text-zinc-400">
-          More about you, your background, and interests.
-        </p>
+        <h1 className="mt-8 text-center text-2xl font-bold text-white">
+          Thoughts
+        </h1>
       </main>
     </div>
   );
