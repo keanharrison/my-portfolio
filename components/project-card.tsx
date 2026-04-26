@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import type { Project } from "@/content/projects";
-import { Label } from "@/components/editorial/label";
 
 function GitHubIcon() {
   return (
@@ -50,7 +49,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <article
       ref={cardRef}
-      className="group relative rounded-sm border border-rule bg-surface p-6 cursor-pointer"
+      className="group relative rounded-sm border border-rule bg-surface p-6 cursor-pointer flex flex-col items-center text-center"
       style={{ transition: "transform 0.22s ease-out, box-shadow 0.22s ease-out" }}
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
@@ -77,7 +76,7 @@ export function ProjectCard({ project }: { project: Project }) {
       aria-label={`View ${project.title}`}
     >
       {/* App icon */}
-      <div className="mb-6 flex justify-center">
+      <div className="mb-5 flex justify-center">
         <div
           className="h-28 w-28 overflow-hidden bg-rule"
           style={{ borderRadius: "22%" }}
@@ -94,17 +93,14 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
 
-      {/* Timeframe */}
-      <Label>{project.timeframe}</Label>
-
       {/* Title */}
-      <h3 className="mt-2 font-serif text-[22px] font-normal leading-snug text-ink">
+      <h3 className="font-serif text-[22px] font-normal leading-snug text-ink">
         {project.title}
       </h3>
 
       {/* Footer */}
-      <div className="mt-6 flex items-center justify-between">
-        {project.githubUrl ? (
+      <div className="mt-5 flex items-center justify-center gap-4">
+        {project.githubUrl && (
           <a
             href={project.githubUrl}
             target="_blank"
@@ -116,10 +112,7 @@ export function ProjectCard({ project }: { project: Project }) {
             <GitHubIcon />
             <span>GitHub</span>
           </a>
-        ) : (
-          <span />
         )}
-
         <span className="font-sans text-xs text-ink-mute transition-colors group-hover:text-ink-soft">
           {project.externalUrl ? "View ↗" : "Click to learn more →"}
         </span>
