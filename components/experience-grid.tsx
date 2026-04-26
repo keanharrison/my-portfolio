@@ -24,7 +24,7 @@ export function ExperienceGrid() {
           Work
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-x-3 gap-y-6 md:grid-cols-4">
           {experience.map((entry) => (
             <ExperienceCard
               key={entry.id}

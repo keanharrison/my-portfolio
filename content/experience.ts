@@ -12,7 +12,7 @@ export const experience: ExperienceEntry[] = [
   {
     id: "booz-allen",
     company: "Booz Allen Hamilton",
-    role: "Product Engineer Intern",
+    role: "Data Scientist",
     timeframe: "Jun 2026 — Aug 2026",
     logo: "/552A9912-60EF-4D8A-97C6-1689F6FE8017.jpeg",
     detail: "[Write detailed content here.]",
@@ -20,7 +20,7 @@ export const experience: ExperienceEntry[] = [
   {
     id: "anthropic",
     company: "Anthropic",
-    role: "Growth Ambassador",
+    role: "Ambassador",
     timeframe: "Aug 2025 — Dec 2025",
     logo: "/03F4A074-BFDD-4475-9548-A93E2E7FC389.jpeg",
     detail: "[Write detailed content here.]",
@@ -46,7 +46,7 @@ export const experience: ExperienceEntry[] = [
   {
     id: "techne",
     company: "Technē Strategy Group",
-    role: "Project Lead",
+    role: "Project Lead (Oracle)",
     timeframe: "Sep 2025 — Present",
     logo: "/139A1C6F-FF02-45C0-A403-659293C8AC85_4_5005_c.jpeg",
     detail: "[Write detailed content here.]",
@@ -54,7 +54,7 @@ export const experience: ExperienceEntry[] = [
   {
     id: "stealth",
     company: "Stealth Startup",
-    role: "Product Manager Intern",
+    role: "Product Manager",
     timeframe: "Jun 2025 — Aug 2025",
     logo: "/CCD79712-C8F5-4C70-A8A2-1393B40DED63_4_5005_c.jpeg",
     detail: "[Write detailed content here.]",
@@ -71,7 +71,7 @@ export const experience: ExperienceEntry[] = [
   {
     id: "johnson-controls",
     company: "Johnson Controls International",
-    role: "Sales Engineer Intern",
+    role: "Sales Engineer",
     timeframe: "May 2025 — Aug 2025",
     logo: "/062AC974-5B70-4B2E-8846-87F3C4C0EBD9.jpeg",
     detail: "[Write detailed content here.]",
