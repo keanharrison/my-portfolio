@@ -30,7 +30,7 @@ export const projects: Project[] = [
   },
   {
     slug: "chatgpt-teardown",
-    title: "ChatGPT Teardown",
+    title: "Teardown",
     timeframe: "Mar 2025",
     externalUrl: "https://drive.google.com/file/d/1DBMw5Lw3Iq-E0Xdfyy_IeSBTXtqtio3o/view?usp=sharing",
     image: "/images/29482061-F3AC-48C9-9E25-08259D315062.jpeg",
