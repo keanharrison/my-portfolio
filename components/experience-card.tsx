@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import type { ExperienceEntry } from "@/content/experience";
-import { Label } from "@/components/editorial/label";
 
 function Logo({ entry }: { entry: ExperienceEntry }) {
   if (entry.logo) {
@@ -37,7 +36,7 @@ export function ExperienceCard({ entry, onClick }: ExperienceCardProps) {
   return (
     <button
       type="button"
-      className="group w-full cursor-pointer rounded-sm border border-rule bg-surface px-4 py-5 text-center transition-shadow hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/20 flex flex-col items-center gap-3"
+      className="group w-full cursor-pointer rounded-sm border border-rule bg-surface px-4 py-6 text-center flex flex-col items-center gap-3 transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:brightness-[1.04] focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/20"
       onClick={onClick}
     >
       <div className="flex h-[52px] items-center justify-center">
@@ -51,9 +50,6 @@ export function ExperienceCard({ entry, onClick }: ExperienceCardProps) {
         <p className="mt-0.5 font-serif text-[15px] text-ink-soft">
           {entry.role}
         </p>
-        <div className="mt-2">
-          <Label>{entry.timeframe}</Label>
-        </div>
       </div>
     </button>
   );

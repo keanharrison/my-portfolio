@@ -23,21 +23,27 @@ export function ProjectCard({ project }: { project: Project }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
+  function handleMouseEnter() {
+    const card = cardRef.current;
+    if (!card) return;
+    card.style.transform = "perspective(700px) rotateY(0deg) rotateX(0deg) translateZ(10px) translateY(-4px)";
+    card.style.boxShadow = "0 8px 28px rgba(0,0,0,0.14)";
+  }
+
   function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
     const card = cardRef.current;
     if (!card) return;
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `perspective(900px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) translateZ(6px)`;
-    card.style.boxShadow = `${-x * 8}px ${-y * 8}px 24px rgba(0,0,0,0.10)`;
+    card.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) translateZ(10px) translateY(-4px)`;
+    card.style.boxShadow = `${-x * 16}px ${-y * 16}px 36px rgba(0,0,0,0.18)`;
   }
 
   function handleMouseLeave() {
     const card = cardRef.current;
     if (!card) return;
-    card.style.transform =
-      "perspective(900px) rotateY(0deg) rotateX(0deg) translateZ(0px)";
+    card.style.transform = "perspective(700px) rotateY(0deg) rotateX(0deg) translateZ(0px) translateY(0px)";
     card.style.boxShadow = "";
   }
 
@@ -45,7 +51,8 @@ export function ProjectCard({ project }: { project: Project }) {
     <article
       ref={cardRef}
       className="group relative rounded-sm border border-rule bg-surface p-6 cursor-pointer"
-      style={{ transition: "transform 0.18s ease-out, box-shadow 0.18s ease-out" }}
+      style={{ transition: "transform 0.22s ease-out, box-shadow 0.22s ease-out" }}
+      onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onClick={() => {
