@@ -15,7 +15,7 @@ export const interests: InterestEntry[] = [
   {
     id: "drawing",
     caption: "Drawing",
-    image: "/A1EC656C-8F64-4068-B151-D8EE1A4E58F0_1_105_c.jpeg",
+    image: "/A1EC656C-8F64-4068-B151-D8EE1A4E58F0.jpeg",
     alt: "Drawing",
   },
   {

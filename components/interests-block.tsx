@@ -17,7 +17,7 @@ export function InterestsBlock() {
 
         <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
           {interests.map((interest) => (
-            <div key={interest.id}>
+            <div key={interest.id} className="flex flex-col items-center">
               <div className="aspect-square w-full overflow-hidden rounded-sm bg-rule">
                 {interest.image && (
                   <Image
@@ -29,7 +29,7 @@ export function InterestsBlock() {
                   />
                 )}
               </div>
-              <p className="mt-4 font-serif text-[16px] leading-[1.6] text-ink-soft">
+              <p className="mt-4 text-center font-serif text-[16px] leading-[1.6] text-ink-soft">
                 {interest.caption}
               </p>
             </div>
