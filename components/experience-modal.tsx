@@ -102,7 +102,7 @@ export function ExperienceModal({ entry, onClose }: ExperienceModalProps) {
 
         {/* Header */}
         <div className="flex items-start gap-4 pr-10">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-rule bg-white">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-rule bg-surface">
             {entry.logo ? (
               <Image
                 src={entry.logo}

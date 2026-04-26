@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Source_Serif_4, Inter, Geist_Mono } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
 const sourceSerif4 = Source_Serif_4({
@@ -32,11 +34,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${sourceSerif4.variable} ${inter.variable} ${geistMono.variable}`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeToggle />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

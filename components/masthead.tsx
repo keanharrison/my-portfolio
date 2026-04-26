@@ -61,7 +61,7 @@ export function Masthead() {
             >
               <div className="w-full max-w-[280px]" style={{ aspectRatio: "2/3" }}>
                 <Image
-                  src="/kean-portrait.jpeg"
+                  src="/images/kean-portrait.jpeg"
                   alt="Kean Harrison"
                   width={560}
                   height={840}
@@ -132,7 +132,7 @@ export function Masthead() {
           >
             <div className="relative h-full w-full">
               <Image
-                src="/kean-portrait.jpeg"
+                src="/images/kean-portrait.jpeg"
                 alt="Kean Harrison"
                 fill
                 quality={90}

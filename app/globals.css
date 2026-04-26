@@ -13,6 +13,16 @@
   --max-reading: 680px;
 }
 
+.dark {
+  --bg: #1E1B18;
+  --surface: #2A2622;
+  --ink: #FAFAF7;
+  --ink-soft: #D6D3D1;
+  --ink-mute: #A8A29E;
+  --rule: #3F3A35;
+  --accent: #C8102E;
+}
+
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
