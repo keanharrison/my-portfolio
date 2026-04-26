@@ -25,8 +25,8 @@ export function ProjectCard({ project }: { project: Project }) {
   function handleMouseEnter() {
     const card = cardRef.current;
     if (!card) return;
-    card.style.transform = "perspective(700px) rotateY(0deg) rotateX(0deg) translateZ(10px) translateY(-4px)";
-    card.style.boxShadow = "0 8px 28px rgba(0,0,0,0.14)";
+    card.style.transform = "perspective(700px) rotateY(0deg) rotateX(0deg) translateZ(14px) translateY(-8px)";
+    card.style.boxShadow = "0 12px 36px rgba(0,0,0,0.20)";
   }
 
   function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
@@ -35,8 +35,8 @@ export function ProjectCard({ project }: { project: Project }) {
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) translateZ(10px) translateY(-4px)`;
-    card.style.boxShadow = `${-x * 16}px ${-y * 16}px 36px rgba(0,0,0,0.18)`;
+    card.style.transform = `perspective(700px) rotateY(${x * 18}deg) rotateX(${-y * 18}deg) translateZ(14px) translateY(-8px)`;
+    card.style.boxShadow = `${-x * 20}px ${-y * 20}px 44px rgba(0,0,0,0.24)`;
   }
 
   function handleMouseLeave() {

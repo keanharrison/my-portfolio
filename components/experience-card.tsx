@@ -36,7 +36,7 @@ export function ExperienceCard({ entry, onClick }: ExperienceCardProps) {
   return (
     <button
       type="button"
-      className="group w-full cursor-pointer rounded-sm border border-rule bg-bg px-4 py-6 text-center flex flex-col items-center gap-3 transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:brightness-[1.04] focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/20"
+      className="group w-full cursor-pointer rounded-sm border border-rule bg-bg px-4 py-6 text-center flex flex-col items-center gap-3 transition-all duration-200 ease-out hover:-translate-y-2 hover:shadow-xl hover:brightness-[1.06] focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/20"
       onClick={onClick}
     >
       <div className="flex h-[52px] items-center justify-center">
