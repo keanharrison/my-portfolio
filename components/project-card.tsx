@@ -49,7 +49,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <article
       ref={cardRef}
-      className="group relative rounded-sm border border-rule bg-surface p-6 cursor-pointer flex flex-col items-center text-center"
+      className="group relative rounded-sm border border-rule bg-bg p-6 cursor-pointer flex flex-col items-center text-center"
       style={{ transition: "transform 0.22s ease-out, box-shadow 0.22s ease-out" }}
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
