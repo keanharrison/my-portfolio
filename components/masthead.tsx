@@ -97,14 +97,6 @@ export function Masthead() {
                 >
                   LinkedIn ↗
                 </a>
-                <a
-                  href="https://drive.google.com/file/d/1miujCIH_WFjJZ-u4LalBbthZgb08NrRy/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-sans text-[13px] text-ink-mute transition-colors hover:text-ink"
-                >
-                  Resume ↗
-                </a>
               </div>
               <div className="flex items-center gap-x-5">
                 <a
